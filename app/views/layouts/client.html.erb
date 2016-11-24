@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Telemetry</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all'%>
+    <script src="http://localhost:8080/application.js" type="text/javascript" charset="utf-8"></script>
+    <%= javascript_include_tag 'application', 'tele_client' %>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
+

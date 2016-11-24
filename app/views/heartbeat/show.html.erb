@@ -1,0 +1,19 @@
+<h2> Heartbeat Info of the client - <%= params[:client_uid] %> </h2>
+<h4> Note: Please refresh the page to get updated info.</h4>
+
+<b> Current generation function: </b> <%= @client_info[0] %>
+<br/>
+<b> Current min, max critical limits: </b> <%= @client_info[1] %> , <%= @client_info[2] %> 
+
+<ul style="list-style: none;">
+    <li style="margin-bottom: 20px">
+        <b><%= "TimeStamp - Payload" %></b>
+    </li>
+
+    <% @hb_stream.each do |hb| %>
+      <li>
+          <%= "#{hb[0]} - " %>
+          <b> <%= "#{hb[1]}" %> </b>
+      </li>
+    <% end %>
+</ul>

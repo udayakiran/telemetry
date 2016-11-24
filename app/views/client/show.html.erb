@@ -1,0 +1,18 @@
+<h2> Client </h2>
+<h3> Click on 'CONNECT' to start sending the heartbeat info. Client also connects to servers and listens.</h3>
+<%= link_to "CONNECT", "javascript:TELE_CLIENT.connect();" %>
+<span id="client_message"></span>
+<%= link_to "DISCONNECT", "javascript:TELE_CLIENT.disconnect();", {:id => 'disconnect'} %>
+<div id="client_actions">
+    <%= link_to "PAUSE", "javascript:TELE_CLIENT.pause();" %>
+    <%= link_to "RESUME", "javascript:TELE_CLIENT.resume();" %>
+    <%= link_to "SHOW HEARTBEAT INFO", "#" , {:target => '_blank', :id => 'showHB'} %>
+    <%= link_to "SHOW GENERATION FUNCTION", "javascript:TELE_CLIENT.showGenFunc();" %>
+    <span id='gen_func'>
+  
+    </span>
+</div>
+
+<div id='client_log'>
+  
+</div>

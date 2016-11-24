@@ -1,0 +1,7 @@
+install nodejs - 0.10.25
+install redis
+
+git clone https://github.com/udayakiran/juggernaut
+cd juggernaut
+npm install
+nodejs server.js

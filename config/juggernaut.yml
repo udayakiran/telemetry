@@ -1,0 +1,36 @@
+# This file contains the settings required for chat via Juggernaut.
+# Ex - <RAILS_ENV>:
+#        redis_host: host where redis is installed
+#        redis_port: redis port
+#        juggernaut_host: host where juggernaut is installed
+#        juggernaut_port: Juggernaut port
+#        juggernaut_protocol: This can be http or https. If its https then make sure that juggernaut is running with https.  
+#                             To run juggernaut in https mode, create folder called 'keys' in the 'juggernaut' directory, containing your privatekey.pem and certificate.pem files. 
+
+development:
+  redis_host: localhost
+  redis_port: 6379
+  juggernaut_host: localhost
+  juggernaut_port: 8080
+  juggernaut_protocol: http
+
+staging:
+  redis_host: localhost
+  redis_port: 6379
+  juggernaut_host: localhost
+  juggernaut_port: 8080
+  juggernaut_protocol: http
+  
+test:
+  redis_host: localhost
+  redis_port: 6379
+  juggernaut_host: localhost
+  juggernaut_port: 8080
+  juggernaut_protocol: http
+  
+production:
+  redis_host: localhost
+  redis_port: 6379
+  juggernaut_host: localhost
+  juggernaut_port: 8080
+  juggernaut_protocol: http

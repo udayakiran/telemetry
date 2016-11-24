@@ -1,0 +1,15 @@
+<h2> Server </h2>
+<h3> List of clients and their heartbeat info</h3>
+<ul style="list-style: none;">
+    <li style="margin-bottom: 20px">
+        <b class="client_uid"><%= "Client Uid" %></b>
+    </li>
+
+    <% @heartbeat_keys.each do |client| %>
+      <li>
+          <b class="client_uid"> <%= client.split("hb:")[1] %> </b>
+          <%= link_to "View Heartbeat Info", heartbeat_path(:client_uid => client.split("hb:")[1]) %>
+      </li>
+    <% end %>
+</ul>
+
